@@ -21,5 +21,10 @@ test:
   database: covid19-nj-api-test
 
 production:
-  <<: *default
+  adapter: postgresql
+  encoding: unicode
   database: covid19-nj-api
+  pool: 5
+  username: developer
+  password:
+  timeout: 5000
