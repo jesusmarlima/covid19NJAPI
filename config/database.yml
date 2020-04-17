@@ -12,6 +12,8 @@ default: &default
 development:
   <<: *default
   database: covid19-nj-api-dev
+  username: jesusmar
+  password:
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".

@@ -44,8 +44,6 @@ class DailyDatumController < ApplicationController
       essex_calculated << { day: index, value: (val*100).truncate(2) }
     end
     data = {dailyData: essex_calculated[0..essex_calculated.length-2]}
-
     render json: data
   end
-
 end

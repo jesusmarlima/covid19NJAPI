@@ -9,10 +9,17 @@ gem 'rails', '~> 6.0.2', '>= 6.0.2.2'
 # gem 'sqlite3', '~> 1.4'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
+gem 'fcm'
+
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
+gem "selenium-webdriver"
+gem "webdrivers"
+gem 'watir'
+
+
 gem 'pg'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
