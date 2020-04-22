@@ -3,6 +3,6 @@ class DailyDatum < ApplicationRecord
   attr_reader :deaths
 
   def send_notification
-    NotificationService.fcm_push_notification("new cases entered. Deaths #{self.deaths ||= 0}")
+    NotificationService.fcm_push_notification("new cases entered. Deaths #{@deaths ||= 0}")
   end
 end

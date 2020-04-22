@@ -33,7 +33,16 @@ DailyDatum.create(date: "2020-4-6", owner: "Essex", positive: 4493, negative:0, 
 DailyDatum.create(date: "2020-4-7", owner: "Essex", positive: 5078, negative:0, deaths:0)
 DailyDatum.create(date: "2020-4-8", owner: "Essex", positive: 5598, negative:0, deaths:0)
 DailyDatum.create(date: "2020-4-9", owner: "Essex", positive: 6069, negative:0, deaths:0)
-
+DailyDatum.create(date: "2020-4-10", owner: "Essex", positive: 6580, negative:0, deaths:0)
+DailyDatum.create(date: "2020-4-11", owner: "Essex", positive: 7007, negative:0, deaths:0)
+DailyDatum.create(date: "2020-4-12", owner: "Essex", positive: 7410, negative:0, deaths:0)
+DailyDatum.create(date: "2020-4-13", owner: "Essex", positive: 7634, negative:0, deaths:0)
+DailyDatum.create(date: "2020-4-14", owner: "Essex", positive: 8212, negative:0, deaths:0)
+DailyDatum.create(date: "2020-4-15", owner: "Essex", positive: 8579, negative:0, deaths:0)
+DailyDatum.create(date: "2020-4-16", owner: "Essex", positive: 9084, negative:0, deaths:0)
+DailyDatum.create(date: "2020-4-17", owner: "Essex", positive: 9672, negative:0, deaths:0)
+DailyDatum.create(date: "2020-4-18", owner: "Essex", positive: 9901, negative:0, deaths:0)
+DailyDatum.create(date: "2020-4-19", owner: "Essex", positive: 10304, negative:0, deaths:0)
 DailyDatum.create(date: "2020-3-15", owner: "NJ", positive: 69	  , negative:0, deaths:0)
 DailyDatum.create(date: "2020-3-16", owner: "NJ", positive: 148	, negative:0, deaths:0)
 DailyDatum.create(date: "2020-3-17", owner: "NJ", positive: 267	, negative:0, deaths:0)
@@ -60,9 +69,16 @@ DailyDatum.create(date: "2020-4-6", owner: "NJ", positive: 41090, negative:47492
 DailyDatum.create(date: "2020-4-7", owner: "NJ", positive: 44416, negative:50558, deaths:1232)
 DailyDatum.create(date: "2020-4-8", owner: "NJ", positive: 47437, negative:52979, deaths:1504)
 DailyDatum.create(date: "2020-4-9", owner: "NJ", positive: 51027, negative:58935, deaths:1700)
-
-
-
+DailyDatum.create(date: "2020-4-10", owner: "NJ", positive: 54588, negative:51023, deaths:1932)
+DailyDatum.create(date: "2020-4-11", owner: "NJ", positive: 58151, negative:62042, deaths:2183)
+DailyDatum.create(date: "2020-4-12", owner: "NJ", positive: 61850, negative:64885, deaths:2350)
+DailyDatum.create(date: "2020-4-13", owner: "NJ", positive: 64584, negative:0,     deaths:2443)
+DailyDatum.create(date: "2020-4-14", owner: "NJ", positive: 68824, negative:70950, deaths:2805)
+DailyDatum.create(date: "2020-4-15", owner: "NJ", positive: 71030, negative:72991, deaths:3156)
+DailyDatum.create(date: "2020-4-16", owner: "NJ", positive: 75317, negative:76513, deaths:3518)
+DailyDatum.create(date: "2020-4-17", owner: "NJ", positive: 78467, negative:0,     deaths:3840)
+DailyDatum.create(date: "2020-4-18", owner: "NJ", positive: 81420, negative:0,     deaths:4070)
+DailyDatum.create(date: "2020-4-19", owner: "NJ", positive: 85301, negative:85387, deaths:4202)
 
 
 
