@@ -19,7 +19,7 @@ gem "selenium-webdriver"
 gem "webdrivers"
 gem 'watir'
 
-
+gem 'jwt'
 gem 'pg'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'

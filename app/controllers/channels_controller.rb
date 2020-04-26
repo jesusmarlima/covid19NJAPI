@@ -1,4 +1,4 @@
-class ChannelsController < ApplicationController
+class ChannelsController < PrivateController
   before_action :set_channel, only: [:show, :update, :destroy]
 
   # GET /channels

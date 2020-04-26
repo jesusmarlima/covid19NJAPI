@@ -1,4 +1,4 @@
-class DailyDatumController < ApplicationController
+class DailyDatumController < PrivateController
 
   def today
     index = 0
