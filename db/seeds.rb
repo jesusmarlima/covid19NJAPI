@@ -60,6 +60,13 @@ DailyDatum.create(date: "2020-5-03", owner: "Essex", positive: 14521, negative:0
 DailyDatum.create(date: "2020-5-04", owner: "Essex", positive: 14621, negative:0, deaths:1292)
 DailyDatum.create(date: "2020-5-05", owner: "Essex", positive: 14840, negative:0, deaths:1319)
 DailyDatum.create(date: "2020-5-06", owner: "Essex", positive: 14951, negative:0, deaths:1349)
+DailyDatum.create(date: "2020-5-07", owner: "Essex", positive: 15095, deaths:1381)
+DailyDatum.create(date: "2020-5-08", owner: "Essex", positive: 15256, deaths:1398)
+DailyDatum.create(date: "2020-5-09", owner: "Essex", positive: 15365, deaths:1414)
+DailyDatum.create(date: "2020-5-10", owner: "Essex", positive: 15524, deaths:1423)
+DailyDatum.create(date: "2020-5-11", owner: "Essex", positive: 15602, deaths:1426)
+DailyDatum.create(date: "2020-5-12", owner: "Essex", positive: 15658, deaths:1444)
+DailyDatum.create(date: "2020-5-13", owner: "Essex", positive: 15749, deaths:1471)
 
 
 DailyDatum.create(date: "2020-3-15", owner: "NJ", positive: 69, negative:0, deaths:0)
@@ -115,3 +122,15 @@ DailyDatum.create(date: "2020-5-03", owner: "NJ", positive: 126744, negative:138
 DailyDatum.create(date: "2020-5-04", owner: "NJ", positive: 128269, negative:148951, deaths:7910)
 DailyDatum.create(date: "2020-5-05", owner: "NJ", positive: 130593, negative:157030, deaths:8114)
 DailyDatum.create(date: "2020-5-06", owner: "NJ", positive: 131890, negative:154686, deaths:8549)
+DailyDatum.create(date: "2020-5-07", owner: "NJ", positive: 133635, deaths:8801)
+DailyDatum.create(date: "2020-5-08", owner: "NJ", positive: 135454, deaths:8952)
+DailyDatum.create(date: "2020-5-09", owner: "NJ", positive: 137085, deaths:9116)
+DailyDatum.create(date: "2020-5-10", owner: "NJ", positive: 138532, deaths:9255)
+DailyDatum.create(date: "2020-5-11", owner: "NJ", positive: 139945, deaths:9310)
+DailyDatum.create(date: "2020-5-12", owner: "NJ", positive: 140703, deaths:9508)
+DailyDatum.create(date: "2020-5-13", owner: "NJ", positive: 141560, deaths:9702)
+
+
+# test data
+DailyDatum.create(date: "2020-5-14", owner: "Essex", positive: 15800, deaths:1500, negative: 999999)
+DailyDatum.create(date: "2020-5-14", owner: "NJ", positive: 141820, deaths:10000, negative: 999999)

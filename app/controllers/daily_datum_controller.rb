@@ -1,12 +1,7 @@
 class DailyDatumController < PrivateController
 
   def today
-    index = 0
-    data = {dailyData:[]}
-    while data[:dailyData].length == 0 do
-      data = {dailyData: DailyDatum.where("to_char(date,'YYYY-MM-DD') = '#{(Date.today - index)}'").sort_by{|d| d.owner }}
-      index += 1
-    end
+    data = {dailyData: DailyDatum.where(date: DailyDatum.select('MAX(date)')).sort_by{|d| d.owner }}
     render json: data
   end
   def state
