@@ -5,8 +5,6 @@ Rails.application.routes.draw do
   get '/state', to: 'daily_datum#state'
   get '/essex', to: 'daily_datum#essex'
   get '/all', to: 'daily_datum#all'
-  get '/growth_nj', to: 'daily_datum#growth_nj'
-  get '/growth_essex', to: 'daily_datum#growth_essex'
   get '/growth', to: 'daily_datum#growth'
 
 end

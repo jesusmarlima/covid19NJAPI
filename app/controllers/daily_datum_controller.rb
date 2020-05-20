@@ -22,26 +22,6 @@ class DailyDatumController < PrivateController
     render json: data
   end
 
-  def growth_nj
-    njs_calculated = []
-    njs = DailyDatum.where(owner: "NJ").sort_by{|d| [d.date ,d.owner] }
-    njs.each_with_index do | daily, index |
-      njs_calculated << { day: index, value: calculate_growth(daily, njs, index) }
-    end
-    data = {dailyData: njs_calculated[0..njs_calculated.length-2]}
-    render json: data
-  end
-
-  def growth_essex
-    essex_calculated = []
-    essex = DailyDatum.where(owner: "Essex").sort_by{|d| [d.date ,d.owner] }
-    essex.each_with_index do | daily, index |
-      essex_calculated << { day: index, value: calculate_growth(daily, essex, index) }
-    end
-    data = {dailyData: essex_calculated[0..essex_calculated.length-2]}
-    render json: data
-  end
-
   def growth
     owner = params[:owner]
     calculated = []

@@ -15,13 +15,13 @@ describe DailyDatumController do
       allow(controller).to receive(:authenticate_request!).and_return(true)
     }
 
-    it 'should return dailydata array of dailydata' do
+    it '/today should return dailydata array of dailydata' do
       expected = {dailyData:[DailyDatum.create(owner:"Essex",date: DateTime.current, negative:100, positive:100, deaths:2)]}.to_json
       get :today
       expect(response.body).to eq(expected)
     end
 
-    it 'should return dailydata array all data' do
+    it '/all should return dailydata array all data' do
       expected = {
         dailyData:[
           DailyDatum.create(owner:"Essex",date: DateTime.current, negative:100, positive:100, deaths:2),
@@ -53,7 +53,7 @@ describe DailyDatumController do
       DailyDatum.create(owner:"Essex",date: DateTime.current, negative:100, positive:100, deaths:2)
       DailyDatum.create(owner:"NJ",date: DateTime.current, negative:1000, positive:1000, deaths:10)
       growth = {dailyData:[{day:0, value:-100.0}]}.to_json
-      get :growth_essex
+      get :growth, params: {owner: 'Essex'}
       expect(response.body).to eq(growth)
     end
 
@@ -62,7 +62,7 @@ describe DailyDatumController do
       DailyDatum.create(owner:"NJ",date: DateTime.yesterday, negative:100, positive:100, deaths:2)
       DailyDatum.create(owner:"NJ",date: DateTime.current, negative:1000, positive:1000, deaths:10)
       growth = {dailyData:[{day:0, value:0.0},{day:1, value:900.0} ]}.to_json
-      get :growth_nj
+      get :growth, params: {owner: 'NJ'}
       expect(response.body).to eq(growth)
     end
   end
