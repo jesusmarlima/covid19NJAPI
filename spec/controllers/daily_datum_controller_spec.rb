@@ -5,6 +5,7 @@ describe DailyDatumController do
   describe 'Unauthorized requests' do
     it 'should return 401' do
       get :today
+      expect(response.body).to_not be(nil)
       expect(response.status).to eq(401)
     end
   end
